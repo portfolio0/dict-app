@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary App</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        height: 200px;
+        width: 600px;
+        background-color: rgba(74, 66, 66, 0.379);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        border-radius: 5px;
+        flex-direction: column;
+        padding: 25px 0 10px 0;
+      }
+
+      .container input {
+        padding: 5px 15px 5px 15px;
+
+        outline: none;
+        border: none;
+        font-size: 20px;
+      }
+      .button {
+        padding: 9px;
+        border: none;
+        background-color: blueviolet;
+        color: white;
+        cursor: pointer;
+      }
+      /* .container h2{
+            
+        } */
+        p{
+            padding: 30px;
+        }
+
+        /* responsive code  */
+
+        @media (max-width:320px) {
+          .media{
+            flex-direction: column;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 style="margin-bottom: 5px">Dictionary App</h2>
+      <!-- new div -->
+      <div
+      class="media"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+        "
+      >
+        <input type="text" name="input" id="ibox"/>
+        <button class="button">Search</button>
+      </div>
+      <div>
+        <p class="op">
+          <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem
+          sequi voluptatum, aliquid quaerat eos quam rerum perferendis, natus -->
+          
+        </p>
+      </div>
+    </div>
+
+    <!-- https://api.dictionaryapi.dev/api/v2/entries/en/hello -->
+
+    <!-- Dictionaryapi.dev -->
+    <script src="app.js"></script>
+  </body>
+</html>
